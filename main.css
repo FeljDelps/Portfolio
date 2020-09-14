@@ -1,0 +1,39 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+    color:black;
+    text-align:center;
+    line-height:1.5;
+}
+
+
+nav, footer{
+    padding: 1% 0;
+    background-color: grey;
+}
+
+header{
+    padding:10% 0;
+    background-color: lightgrey;
+}
+
+section{
+    min-height:200px;
+    padding: 10% 0;
+    background-color: white;
+}
+
+section:nth-child(even){
+    background-color: black;
+    color:white;
+}
+
+nav {
+    position:fixed;
+    left:0;
+    right:0;
+}
