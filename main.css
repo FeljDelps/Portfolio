@@ -6,7 +6,6 @@ body{
     font-family:'Open Sans', sans-serif;
     font-size: 20px;
     color:black;
-    text-align:center;
     line-height:1.5;
 }
 
@@ -27,11 +26,6 @@ section{
     background-color: white;
 }
 
-section:nth-child(even){
-    background-color: black;
-    color:white;
-}
-
 nav {
     position:fixed;
     left:0;
@@ -46,12 +40,57 @@ height:500px;
 }
 
 @media screen and (max-width:414px){
-main{
-    display:flex;
-    flex-direction: column;
-    margin-left:auto;
-    margin-right:auto;
+
+nav {
+    font-family: 'poppins';
+    background-color: #2E86C1 ;
+    color:white;
+    height:50px;
 }
 
+nav>h1{
+    position: absolute;    
+    vertical-align:middle;
+    padding-left:20px;
+}
 
+.nav-bar {
+    display:none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: block;
+    text-align: center;
+    background-color: white;
+}
+
+.hero-text{
+    text-align:left;
+    padding:20px;
+    font-size:18px;
+    font-family: 'poppins';
+}
+
+.image {
+    width:300px;
+    height:300px;
+    padding:20px;
+}
+
+.portfolio-section {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-headline{
+    font-family: 'halant';
+    font-weight: bold;
+    font-size: 48px;
+    color:#2E86C1 ;
 }
