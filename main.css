@@ -17,6 +17,11 @@ nav {
     display:none;
 }
 
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
 nav>h1{
     position: absolute;    
     top: 10px;
@@ -86,8 +91,8 @@ header{
 
 .caption-text{
     font-family: 'poppins';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 button[type='button']{
@@ -108,5 +113,47 @@ footer {
     padding-top: 20px;  
 }
 
-@media screen and (max-width:415px){
+@media screen and (min-width:415px){
+ 
+    header{
+        padding-bottom:50px;
+    }
 
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        top:15px;
+        right:50px;
+    }
+
+    .nav-item{
+        padding:0 10px;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .image{
+        width:400px;
+        height:400px;
+    }
+
+    .portfolio-section{
+        padding:40px 0;
+    }
+
+    .project-image{
+        width:450px;
+        height:400px;
+    }
+
+    .caption-text{
+        font-size:16px;
+        line-height: 22px;
+        padding-top:15px;
+    }
+
+}
